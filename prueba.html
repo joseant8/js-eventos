@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Eventos</title>
+</head>
+<body>
+	<h2>Prueba JS Eventos</h2>
+	<button onclick="tipoEvento(event)" onkeyup="tipoEvento(event)">Ver Evento</button>
+	</br></br>
+	<button id="ACC.PRUEBA1" onclick="hola()">Hola</button>
+	<button id="ACC.PRUEBA2" onclick="elementIDNoExiste()">ID Nulo</button>
+	<button onclick="cambioAspectoBoton()">Cambio Aspecto Botón Anterior</button>
+	</br></br>
+	
+	<div>
+		<button class="raton">Botón prohibido</button>
+	</div>
+	</br>
+	
+	<button onclick="mostrarPortapapeles2()">Mostrar contenido portapapeles</button>
+	</br>
+	
+	<button onclick="pegarDesdePortapapeles3()">Pegar</button>
+	</br>
+	<input id="inputCopiarContent" type="text" maxlength="30" value="" placeholder="Pegar o escribir números" onkeyup="copiarNumeros(event)" onblur="copiarNumeros(event)" onmouseout="copiarNumeros(event)"></input>
+	<button onclick="limpiarContenidoInput('inputCopiarContent')">Limpiar Contenido</button>
+	</br>
+	<input id="inputPegar1" type="text" maxlength="6" value="" onkeyup="pasarInputDerecha()" ></input>
+	<input id="inputPegar2" type="text" maxlength="6" value=""></input>
+	<input id="inputPegar3" type="text" maxlength="6" value=""></input>
+	</br>
+	</br>
+	
+</body>
+<script src="prueba.js"></script>
+</html>
